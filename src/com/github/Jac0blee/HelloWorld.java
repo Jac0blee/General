@@ -11,7 +11,7 @@ public final class HelloWorld {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		
 		String readline;
-			
+			System.out.println("Type in the password.");
 		while ((readline = in.readLine()) != null) {
 				
 			String password = "Fireworks";
