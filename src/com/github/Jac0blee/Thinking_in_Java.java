@@ -19,9 +19,10 @@ public class Thinking_in_Java {
 			int length;
 			String name = "Suzie";
 			
-			String ReturnName() {
+			void ReturnName() {
+				System.out.print("The car's name is: ");
+				System.out.println(name);
 				
-				return name;
 				
 			}
 			
@@ -32,16 +33,18 @@ public class Thinking_in_Java {
 		Mustang.height = 5;
 		Mustang.width = 8;
 		Mustang.length = 20;
-		Mustang.name = "Frankfurt";
+		
 
 		System.out.println(Mustang.height);
 		System.out.println(Mustang.width);
 		System.out.println(Mustang.length);
 		System.out.println(Mustang.name);
 		
-		String CarName = Mustang.ReturnName();
+		Mustang.name = in.readLine();
 		
-		System.out.println(CarName);
+		System.out.println(Mustang.name);
+		Mustang.ReturnName();
+		
 	}
 
 }
