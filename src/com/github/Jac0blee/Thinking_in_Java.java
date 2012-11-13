@@ -25,6 +25,9 @@ public class Thinking_in_Java {
 		
 		Random rand = new Random();
 		
+		int firework = rand.nextInt(101);
+		
+		System.out.println(firework);
 		/*Dog d1 = new Dog();
 		Dog d2 = new Dog();
 		Dog d3 = d2;
