@@ -20,14 +20,44 @@ public class Thinking_in_Java {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
 		String readline;
-		
+			
 		System.out.println("Rather a lot to type");
 		
 		Random rand = new Random();
 		
-		int firework = rand.nextInt(101);
+		//int firework = rand.nextInt(101);
 		
-		System.out.println(firework);
+		//System.out.println(firework);
+		
+	    // Coin Flipping Simulator
+		boolean coin = false;
+		boolean done = false;
+		int flip = 0;
+		while(done != true){
+			System.out.println("Do you want to:");
+			System.out.println("1. Flip coin?");
+			System.out.println("2. Leave?");
+			readline = in.readLine();
+			if(readline.equals("1")){
+
+				flip = (rand.nextInt(2)) + 1;
+				System.out.println(flip);
+				if(flip == 1){
+					System.out.println("The coin landed on heads");
+				}
+				else if(flip == 2){
+					System.out.println("The coin landed on Tails");
+				}
+			}
+			else if(readline.equals("2")){
+				done = true;
+				System.out.println("BYE!!!");
+			}
+		}
+		
+		
+		
+		
 		/*Dog d1 = new Dog();
 		Dog d2 = new Dog();
 		Dog d3 = d2;
